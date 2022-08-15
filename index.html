@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Example Website - Home</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/styles.css" />
+
+    </head>
+    
+    <body>
+        <header>
+            <h1>Examples</h1>
+            <button type="button" id="bg_theme" onclick="switchTheme(false)">
+                <div id="circle"></div>
+            </button>
+        </header>
+
+        <nav>
+            <ul id="nav_links">
+                <li><a href="index.html" class="selected">Home</a></li>
+                <li><a href="border.html">Borders</a></li>
+                <li><a href="background.html">Backgrounds</a></li>
+                <li><a href="404.html">404 Error</a></li>
+                <li style="float: right;"><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <div id="main" style="overflow: auto;">
+            
+
+            <section id="home_section" style="float: left; margin-left: 8rem;">
+                <h3>Quick Descriptions of Example Pages</h3>
+                <ol>
+                    <li><span>Borders</span> - Changes the border property</li>
+                    <li><span>Backgrounds</span> - Changes the background property</li>
+                    <li><span>404 Error</span> - Links to a bad URL</li>
+                    <li><span>About</span> - About this small project</li>
+                </ol>
+            </section>
+
+            <section id="home_section" style="float: right; margin-right: 4rem;" >
+                <h3>Specific to Questions Asked</h3>
+                <ul>
+                    <li>Span used on ordered List to the left</li>
+                    <li>Semantics tags used in place of some divs</li>
+                    <li>Divs used judiciously</li>
+                    <li>Padding and margin properties used in most elements</li>
+                    <li>Background-color changed to red in Backgrounds page</li>
+                    <li>Setting up a border around an element in Borders page</li>
+                    <li>Linking to a bad URL to display 404 error</li>
+                    <li>Cookies used to store dark/light theme (top right button). Some browsers don't save cookies of local web pages (Chrome)</li>
+                    <li>Various CSS properties and values used (px, em, rem, %, etc.) for demo, otherwise it would have mostly been relative units only</li>
+                </ul>
+            </section>
+        </div>
+
+        <footer>
+            <p>Some Footer with links, maybe a picture and/or container &copy date etc.</p>
+        </footer>
+
+        <!--Scripts-->
+        <script src="js/theme.js"></script>
+    </body>    
+</html>

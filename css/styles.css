@@ -1,0 +1,227 @@
+/*
+    Styles for Examples
+    By me
+*/
+
+/* HTML */
+html {
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+/* Header */
+header {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+    header h1 {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+#bg_theme {
+    width: 80px;
+    height: 40px;
+    margin-top: 2em;
+    border-radius: 120px;
+    background-color: black;
+    margin-left: auto;
+    transition: 0.5s;
+}
+
+    #bg_theme.button_clicked {
+        background-color: white;
+    }
+
+#circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 180px;
+    background-color: white;
+    cursor: pointer; 
+    transition: 0.5s;    
+}
+
+    #circle.circle_clicked {
+        background-color: black;
+        margin-left: 35px;
+    }
+
+/* Nav */
+nav {   
+    width: 80%;  
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -1rem;  
+}
+    nav ul {
+        background-image: url("../images/main.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        list-style-type: none;
+        overflow: hidden;
+        padding: 0;
+    } 
+
+    nav li {
+        float: left;
+    }
+
+    nav a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 20px 20px;
+        font-weight: 800;
+    }
+
+        nav a:hover {
+            background-color: rgb(58, 58, 58);
+            color: white;
+        }
+
+        nav a.nav_clicked:hover {
+            background-color: rgb(170, 170, 170);
+            color: black;
+        }
+
+        nav a.selected {
+            background-color: white;
+            color: black;
+        }
+
+        nav a.selected_clicked {
+            background-color: rgb(37, 37, 37);
+            color: white;
+        }
+
+        nav a.selected:hover {
+            color: rgba(8, 151, 151, 0.986);
+        }
+
+/* Main */
+#main {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    padding-bottom: 2rem;
+    min-height: 800px;
+}
+    #main.main_clicked {
+        background-color: rgb(37, 37, 37);
+        color: white;
+    }
+
+    #main section {
+        text-align: center;
+    }
+        
+        #main section hr {
+            color: grey; 
+            width: 50%;
+        }
+
+        #main section button {
+            padding: 4px 6px 4px 6px;
+        }       
+
+    #main h3 {
+        margin: auto;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    #main p {
+        margin: auto;
+    }
+
+    #main #home_section {
+        margin-left: 4rem;
+        padding-top: 4rem;
+        text-align: left;
+        width: 40%;
+    }
+
+    #main li {
+        margin: 4px;
+    }
+
+    #main span {
+        color:rgb(173, 30, 5);
+        font-weight: 800;
+    }
+
+/* Border Box */
+#border_box {
+    width: 500px;
+    height: 400px;
+    border: 1px solid;
+    margin: 4rem 2rem 0rem 14rem;
+}
+
+/* Border Controls */
+#border_controls {
+    width: 600px;
+    height: 700px;
+    margin: 4rem 0rem 2rem 2rem;   
+}
+    #border_controls button {
+        min-width: 40px;
+        width: auto;
+        height: 40px;
+        overflow: auto;   
+        float: left;
+        margin-right: 1rem;  
+    }
+
+    #border_controls h4 {       
+        margin: 1rem;
+    }
+
+    #border_controls div {
+        overflow: auto; 
+        display: table-cell inline-block;
+        padding-bottom: 2rem;
+    }
+
+/* Background Container */
+#bg_container {
+    width: 270px;
+    min-height: 200px;
+    border: 1px solid;
+    margin: 2rem auto 0rem auto;
+    overflow: auto;
+}
+
+/* Background Box (Dynamically created) */
+.bg_box {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    float: left;
+    margin: 8px;
+    user-select: none;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+/* Footer */
+footer {   
+    width: 80%;  
+    margin: auto;
+}
+
+    footer p {
+        float: right;
+        color: white;
+    }

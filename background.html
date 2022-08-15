@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Example Website - Background Examples</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/styles.css" />
+
+    </head>
+    
+    <body>
+        <header>
+            <h1>Dynamic Containers + Background Colors</h1>
+            <button type="button" id="bg_theme" onclick="switchTheme(false)">
+                <div id="circle"></div>
+            </button>
+        </header>
+
+        <nav>
+            <ul id="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="border.html">Borders</a></li>
+                <li><a href="background.html" class="selected">Backgrounds</a></li>
+                <li><a href="404.html">404 Error</a></li>
+                <li style="float: right;"><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <div id="main">
+            <section>
+                <h3>Changing Backgrounds of Dynamic Boxes</h3>
+                <p>
+                    Add a coloured box to the container using the button below. Click on an added box to cycle the background colours.<br>
+                    Once a box has been clicked on, the colour can also be changed by typing in any accepted CSS value.
+                </p>
+                <hr>
+                <button type="button" style="margin-top: 2rem" onclick="addBox()">Add a Box</button>
+            </section>
+
+            <div style="overflow: auto;">
+                <div id="bg_container"></div>
+                
+                <section style="padding-top: 2rem;">
+                    <!--Could do this in JS, but oh well; stops enter key from reloading page.-->
+                    <form onkeydown="return event.key != 'Enter';">
+                        <label for="color">Change Colour Manually:</label> 
+                        <input type="text" id="color" name="color"><br>
+                        <button style="margin-top: 8px;" type="button" onclick="alterColour(document.getElementById('color').value)">Change Colour</button>
+                    </form>
+                </section>
+            </div>
+        </div>
+
+        <footer>
+            <p>Some Footer with links, maybe a picture and/or container &copy date etc.</p>
+        </footer>
+
+        <!--Scripts-->
+        <script src="js/background.js"></script>
+        <script src="js/theme.js"></script>
+    </body>    
+</html>

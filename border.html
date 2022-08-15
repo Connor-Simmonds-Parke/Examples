@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Example Website - Border Examples</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/styles.css" />
+
+    </head>
+    
+    <body>
+        <header>
+            <h1>Dynamic Borders</h1>
+            <button type="button" id="bg_theme" onclick="switchTheme(false)">
+                <div id="circle"></div>
+            </button>
+        </header>
+
+        <nav>
+            <ul id="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="border.html" class="selected">Borders</a></li>
+                <li><a href="background.html">Backgrounds</a></li>
+                <li><a href="404.html">404 Error</a></li>
+                <li style="float: right;"><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <div id="main">
+            <section>
+                <h3>Changing Border Styles</h3>
+                <p>A few examples of changing the style, size, or disabling/enabling the borders around an element.</p>
+                <hr>
+            </section>
+            
+            <div style="overflow: auto;">
+                <div id="border_box" style="float: left;">
+
+                </div>
+                <div id="border_controls" style="float: right;">
+                    <div>
+                        <h4>Change Border Size</h4>
+                        <button type="button" onclick="increaseSize()">+</button>
+                        <button type="button" onclick="decreaseSize()">-</button>
+                    </div>
+
+                    <div>
+                        <h4>Change Border Style</h4>
+                        <button type="button" onclick="turnOn()">Solid</button>
+                        <button type="button" onclick="turnDashed()">Dashed</button>
+                        <button type="button" onclick="turnDotted()">Dotted</button>
+                    </div>
+
+                    <div>
+                        <h4>Add/Remove Border</h4>
+                        <button type="button" onclick="turnOn()">On</button>
+                        <button type="button" onclick="turnOff()">Off</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Some Footer with links, maybe a picture and/or container &copy date etc.</p>
+        </footer>
+
+        <!--Scripts-->
+        <script src="js/border.js"></script>
+        <script src="js/theme.js"></script>
+    </body>    
+</html>
